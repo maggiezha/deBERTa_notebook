@@ -16,4 +16,8 @@ $ cd /workspace/deberta
 
 $ jupyter notebook --port 8888
 
-Then open the notebook in your browser(using the token)
+Then open the notebook in your browser(using the token), and play with the notebook.
+
+Please notice the finetuning step could take many hours, it can run on multiple GPUs.
+
+You can change the batch size based on your GPU memory size, and increase the number of epochs to get a better finetuning result.
