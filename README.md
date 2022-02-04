@@ -1,17 +1,19 @@
 # deBERTa_notebook
 
-You can run the deBERTa notebook using Colab directly, 
+You can run the deBERTa notebook "DeBERTa for Question Answering Colab" using Colab directly, 
 
-or on your local machine or server remotely by starting a PyTorch container following the below steps:
+or run the deBERTa notebook "DeBERTa for Question Answering" on your own machine following the below steps:
 
-docker run -it --rm --gpus all -p 8888:8888 -v $PWD:/workspace/deberta nvcr.io/nvidia/pytorch:21.12-py3
+1. Download the notebook to your own machine, go to the directory having the notebook.
 
-cd /workspace/deberta 
+2. Start a NGC PyTorch container:
 
-Run the notebook:
+$ docker run -it --rm --gpus all -p 8888:8888 -v $PWD:/workspace/deberta nvcr.io/nvidia/pytorch:21.12-py3
 
-cd /workspace/deberta 
+3. Run the notebook:
 
-jupyter notebook --port 8888
+$ cd /workspace/deberta 
+
+$ jupyter notebook --port 8888
 
 Then open the notebook in your browser(using the token)
